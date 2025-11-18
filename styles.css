@@ -1,0 +1,79 @@
+/* TODO: Implement the CSS styles for the calculator
+   Your task is to style the calculator to match the design in the image.
+   You'll need to style the body, calculator container, display, buttons, and other elements.
+   Use appropriate colors, sizes, and layouts to create a visually appealing calculator.
+  
+   Have fun styling your calculator app!
+*/
+:root{
+   --lightGray: #ced4da;
+   --darkGray: #343a40;
+   --orange : #fca311;
+   --dark : #000814;
+   --bg-color: #eae2b7;
+}
+*{
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--bg-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 90vh;
+}
+.calculator{
+   border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   padding: 0.5rem;
+   background-color: var(--dark);
+   border-radius: 1rem;
+   width: 17rem;
+}
+.calculator-display{
+   height: 3rem;
+   margin: 0.5rem;
+   overflow: hidden;
+   
+}
+.display{
+   font-size: 2.5rem;
+   color: white;
+   text-align: right;
+      /* align numbers to the right like real calculators */
+      white-space: nowrap;
+      /* prevent wrapping */
+      overflow: hidden;
+   
+}
+.calculator-buttons{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   justify-items: center;
+   gap: 0.5rem;
+}
+
+.button{
+   width: 3.5rem;
+   height: 3.5rem;
+   border-radius: 50%;
+   font-size: 1.2rem;
+   font-weight: 600;
+   border: none;
+   background-color: var(--darkGray);
+   color: white;
+}
+.large-button{
+   width: 6rem;
+   border-radius: 2rem;
+   grid-column: 1/3;
+}
+.gray{
+   background-color: var(--lightGray);
+   color: black;
+}
+.orange{
+   background-color: var(--orange);
+}
