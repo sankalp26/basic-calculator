@@ -1,2 +1,3 @@
 A new file added
 Adding more lines to new Branch2.
+More text to the file after setting upstream -u
