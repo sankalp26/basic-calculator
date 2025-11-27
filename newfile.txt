@@ -1,1 +1,2 @@
 A new file added
+Adding more lines to new Branch2.
